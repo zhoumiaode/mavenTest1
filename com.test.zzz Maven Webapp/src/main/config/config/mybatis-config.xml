@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 指定所用日志的具体实现 -->
+<settings>
+<setting name="logImpl" value="LOG4J"/>
+<!-- 数据库一对多时候用到懒加载 -->
+<setting name="lazyLoadingEnabled" value="true"></setting>
+<setting name="aggressiveLazyLoading" value="false"></setting>
+<!-- 开启二级缓存 -->
+<setting name="cacheEnabled" value=" true"></setting>
+</settings>
+	<!-- 实体类,简称 -设置别名 -->
+	<typeAliases>
+		<typeAlias alias="User" type="com.mapper.UserMapper" />
+	</typeAliases>
+</configuration>  

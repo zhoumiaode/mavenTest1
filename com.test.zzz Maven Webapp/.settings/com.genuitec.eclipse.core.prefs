@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp/test/js/jquery.min.js,src/main/webapp/source/js/jquery.min.js,src/main/webapp/source/Font-Awesome-3.2.1/src/assets/js/prettify.min.js,src/main/webapp/test/js/laydate/laydate.js,src/main/webapp/source/Font-Awesome-3.2.1/src/assets/js/jquery-1.7.1.min.js,src/main/webapp/source/js/jquery-1.11.1.min.js
+validator.Unchecked=

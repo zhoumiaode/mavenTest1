@@ -1,0 +1,26 @@
+/*菜单列表*/
+.add-btn{
+	position: relative; 
+	left: 22px;
+	top:56px;
+	width: 50%; 
+}
+#menuAdd .modal-body{
+	padding:0 15px;
+}
+.modal-body .before-labels{
+	width: 119px;
+	line-height:33px;
+	float:left;
+}
+.modal-body .td-input{
+	width:59%;
+	float:left;
+}
+.modal-body .td-input select{
+	height:36px;
+	width:79%
+}
+.modal-body .input-table td{
+	height:54px;
+}
