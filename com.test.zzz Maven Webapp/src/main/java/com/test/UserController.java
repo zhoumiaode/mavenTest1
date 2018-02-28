@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.tools.UserValidator;
 import com.vo.User;
 
-@RequestMapping(value="/user")
+@RequestMapping(value="/user1")
 @Controller
 public class UserController {
 	

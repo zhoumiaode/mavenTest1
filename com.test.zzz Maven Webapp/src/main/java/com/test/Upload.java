@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.data.redis.core.HashOperations;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,10 +21,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.action.BaseAction;
+
 
 @Controller
 @RequestMapping(value="/upload")
-public class Upload {
+public class Upload extends BaseAction{
 	
 	private static final Log logger=LogFactory.getLog(Upload.class);
 	
@@ -110,9 +113,14 @@ public class Upload {
 	}
 	
 	
-	@RequestMapping(value="/uploadfile11",method=RequestMethod.POST)
+	@RequestMapping(value="/uploadfile11",method=RequestMethod.GET)
 	@ResponseBody
 	public Object upload(String username,String imgname){
+		HashOperations<String, Object, Object>  hash = getRedisTemplate().opsForHash();
+		Map<String,Object> map = new HashMap<String,Object>();
+        map.put("phone", "12");
+        map.put("mail","12");
+        hash.putAll("11111", map);
 		String name="jack";
 		System.out.println(name);
 		return null;

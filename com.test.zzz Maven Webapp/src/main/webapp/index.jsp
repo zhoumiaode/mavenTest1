@@ -14,11 +14,8 @@ response.setHeader("Access-Control-Allow-Origin", "*");
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>物联网</title>
-
-<link rel="stylesheet" href="<%=basePath %>source/css/zzsc-demo.css"  type="text/css">
 <link rel="stylesheet" href="<%=basePath %>source/css/jquery-accordion-menu.css" type="text/css" />
 <link rel="stylesheet" href="<%=basePath %>source/css/bootstrap.min.css">
-<link rel="stylesheet" href="<%=basePath %>source/css/base_1.css">
 <link rel="stylesheet" href="<%=basePath %>source/css/index.css" type="text/css" />
 	<!--图标-->
 <link rel="stylesheet" href="<%=basePath %>source/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -40,9 +37,9 @@ response.setHeader("Access-Control-Allow-Origin", "*");
 			<ul id="demo-list">  
 				<li><a href="#"><i class="fa fa-cog"></i>视频监控 </a>
 					<ul class="submenu" style="display: block;">
-						<li class="hover_a"><a href="#" onclick="goto1('<%=basePath %>webdemo/video_ocx.jsp')">视频监控 </a></li>
-						<li><a href="#" id="sxtgl" onclick="goto1('<%=basePath %>iot/camera/jsp/cameraList.jsp')">摄像头管理 </a></li>
-						<li><a href="#" id="sxtglb" onclick="goto1('<%=basePath %>iot/camera/jsp/cameraListServer.jsp')">摄像头管理_后台</a></li>
+						<li class="hover_a"><a href="#" onclick="goto1('<%=basePath %>test/jsp/boot.jsp')">视频监控 </a></li>
+						<li><a href="#" id="sxtgl" onclick="goto1('<%=basePath %>test/jsp/bootbox.jsp')">摄像头管理 </a></li>
+						<li><a href="#" id="sxtglb" onclick="goto1('<%=basePath %>test/jsp/upload.jsp')">摄像头管理_后台</a></li>
 					</ul>
 				</li>
 				<li><a href="#"><i class="fa fa-cog"></i>环境监控 </a>
@@ -99,7 +96,6 @@ response.setHeader("Access-Control-Allow-Origin", "*");
 		</span>
 	</div>
 	<div class="right_content"   id="right_content">
-		<!--<iframe align="center" width="100%" height="100%" src=""  id="right_content"frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
 	</div>
 	<!-- 消息栏 -->
 	<div class="tip-box tip-suc-box">
@@ -109,34 +105,5 @@ response.setHeader("Access-Control-Allow-Origin", "*");
 		<span></span> <a>×</a>
 	</div>
 </div>
-<!-- 修改密码（Modal） -->
-<div class="modal fade" id="myModal_all" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" style="margin-top: 230px;">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-						aria-hidden="true">×
-				</button>
-				<h4 class="modal-title" id="myModalLabel">
-					修改密码
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p class="modal_p"><span class="modal_p_sp">用户名称</span><input class="modal_ipt" type="text" placeholder="" value="土豆妹儿"></p>
-				<p class="modal_p"><span class="modal_p_sp">登录手机号</span><input class="modal_ipt" type="text" placeholder="" value="18202828271"></p>
-				<p class="modal_p"><span class="modal_p_sp">原密码</span><input class="modal_ipt" type="password" placeholder="请输入原密码"><span class="prompt">*<span></span></span></p>
-				<p class="modal_p"><span class="modal_p_sp">新密码</span><input class="modal_ipt" type="password" placeholder="请输入新密码"><span class="prompt">*<span></span></span></p>
-				<p class="modal_p"><span class="modal_p_sp">新密码</span><input class="modal_ipt" type="password" placeholder="请输入新密码"><span class="prompt">*<span></span></span></p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
-				</button>
-				<button type="button" class="btn btn-primary">
-					提交更改
-				</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 </body>
 </html>
